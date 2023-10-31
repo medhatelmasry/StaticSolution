@@ -2,14 +2,13 @@
 
 namespace SchoolLibrary;
 
-public class Student
+public partial class Student
 {
-    public string? StudentId { get; set; }
-    [Required]
-    public string? FirstName { get; set; }
-    [Required]
-    public string? LastName { get; set; }
-    [Required]
-    public string? School { get; set; }
-}
+    public int StudentId { get; set; }
 
+    public string LastName { get; set; } = null!;
+
+    public string FirstName { get; set; } = null!;
+
+    public string School { get; set; } = null!;
+}

@@ -21,8 +21,6 @@
     {
         string endpoint = $"{Constants.BASE_URL}api/students";
 
-        student.StudentId = Guid.NewGuid().ToString();
-
         await httpClient.PostAsJsonAsync(endpoint, student);
 
         // redirect to students page
